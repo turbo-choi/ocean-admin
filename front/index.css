@@ -1,0 +1,42 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Keep login CTA visible even if external Tailwind config fails to load. */
+.login-submit-btn {
+  background-color: #0da2e7;
+  color: #ffffff;
+}
+
+.login-submit-btn:hover:not(:disabled) {
+  background-color: #0284c7;
+}
+
+/* Reusable ocean primary button fallback */
+.btn-ocean {
+  background-color: #0da2e7;
+  color: #ffffff;
+}
+
+.btn-ocean:hover:not(:disabled) {
+  background-color: #0284c7;
+}
