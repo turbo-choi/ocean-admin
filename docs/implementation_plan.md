@@ -6,7 +6,7 @@ Ocean Admin Dashboard에 게시판(Board) 기능을 추가하기 위한 풀스�
 
 ## 현재 프로젝트 분석
 
-### 프론트엔드 (`front/`)
+### 프론트엔드 (`frontend/`)
 - **프레임워크**: React 19 + TypeScript + Vite
 - **스타일링**: TailwindCSS (CDN)
 - **UI 라이브러리**: lucide-react (아이콘), recharts (차트)
@@ -94,40 +94,40 @@ SQLite 데이터베이스 연결 및 스키마 초기화
 
 ### 프론트엔드 구조
 
-#### [MODIFY] [package.json](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/package.json)
+#### [MODIFY] [package.json](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/package.json)
 react-router-dom 의존성 추가
 
-#### [MODIFY] [App.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/App.tsx)
+#### [MODIFY] [App.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/App.tsx)
 React Router 적용, 페이지 라우팅 추가
 
-#### [MODIFY] [Sidebar.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/components/Sidebar.tsx)
+#### [MODIFY] [Sidebar.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/components/Sidebar.tsx)
 게시판 메뉴 추가 및 라우터 Link 사용
 
-#### [NEW] [pages/Dashboard.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/pages/Dashboard.tsx)
+#### [NEW] [pages/Dashboard.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/pages/Dashboard.tsx)
 기존 대시보드 내용을 페이지 컴포넌트로 분리
 
-#### [NEW] [pages/BoardList.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/pages/BoardList.tsx)
+#### [NEW] [pages/BoardList.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/pages/BoardList.tsx)
 게시판 목록 페이지
 - 테이블 형태로 게시글 목록 표시
 - 페이지네이션
 - 검색 기능
 - 글쓰기 버튼
 
-#### [NEW] [pages/BoardDetail.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/pages/BoardDetail.tsx)
+#### [NEW] [pages/BoardDetail.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/pages/BoardDetail.tsx)
 게시글 상세 페이지
 - 제목, 작성자, 날짜, 내용 표시
 - 수정/삭제 버튼
 - 목록으로 버튼
 
-#### [NEW] [pages/BoardWrite.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/pages/BoardWrite.tsx)
+#### [NEW] [pages/BoardWrite.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/pages/BoardWrite.tsx)
 게시글 작성/수정 페이지
 - 제목, 내용 입력 폼
 - 저장/취소 버튼
 
-#### [MODIFY] [types.ts](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/types.ts)
+#### [MODIFY] [types.ts](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/types.ts)
 Board 타입 정의 추가
 
-#### [NEW] [api/board.ts](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/api/board.ts)
+#### [NEW] [api/board.ts](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/api/board.ts)
 게시판 API 클라이언트
 
 ---
@@ -184,7 +184,7 @@ CREATE TABLE boards (
 
 3. **프론트엔드 빌드 테스트**
    ```bash
-   cd /home/turbo/workspaces/workspace-edu/ocean-admin/front
+   cd /home/turbo/workspaces/workspace-edu/ocean-admin/frontend
    npm install
    npm run dev
    # 빌드 에러 없이 실행되는지 확인

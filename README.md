@@ -60,12 +60,12 @@ Full-stack admin dashboard built with React 19, TypeScript, Express, and SQLite.
     npm install
 
     # Install frontend dependencies
-    cd ../front
+    cd ../frontend
     npm install
     ```
 
 3.  **Environment Configuration**
-    Create `.env` files in `backend/` and `front/` based on `.env.example`.
+    Create `.env` files in `backend/` and `frontend/` based on `.env.example`.
 
     **Backend (`backend/.env`):**
     ```env
@@ -90,7 +90,7 @@ npm start
 cd backend && npm run dev
 
 # Frontend (Port 3000)
-cd front && npm run dev
+cd frontend && npm run dev
 ```
 
 Visit **http://localhost:3000** to see the application.

@@ -27,12 +27,12 @@ Ocean Admin에 게시판 기능을 성공적으로 구현했습니다.
 
 | 파일 | 설명 |
 |------|------|
-| [App.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/App.tsx) | 라우터 적용된 메인 앱 |
-| [Sidebar.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/components/Sidebar.tsx) | 게시판 메뉴 추가 |
-| [pages/BoardList.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/pages/BoardList.tsx) | 게시판 목록 페이지 |
-| [pages/BoardDetail.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/pages/BoardDetail.tsx) | 게시글 상세 페이지 |
-| [pages/BoardWrite.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/pages/BoardWrite.tsx) | 게시글 작성/수정 페이지 |
-| [api/board.ts](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/api/board.ts) | API 클라이언트 |
+| [App.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/App.tsx) | 라우터 적용된 메인 앱 |
+| [Sidebar.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/components/Sidebar.tsx) | 게시판 메뉴 추가 |
+| [pages/BoardList.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/pages/BoardList.tsx) | 게시판 목록 페이지 |
+| [pages/BoardDetail.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/pages/BoardDetail.tsx) | 게시글 상세 페이지 |
+| [pages/BoardWrite.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/pages/BoardWrite.tsx) | 게시글 작성/수정 페이지 |
+| [api/board.ts](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/api/board.ts) | API 클라이언트 |
 
 ---
 
@@ -83,7 +83,7 @@ npm install
 npm run dev
 
 # 터미널 2: 프론트엔드 서버 (포트 3000)
-cd ocean-admin/front
+cd ocean-admin/frontend
 npm install
 npm run dev
 ```

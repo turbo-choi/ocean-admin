@@ -70,25 +70,25 @@ User, AuthRequest 타입 정의
 
 ### 프론트엔드
 
-#### [NEW] [pages/Login.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/pages/Login.tsx)
+#### [NEW] [pages/Login.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/pages/Login.tsx)
 로그인 페이지
 
-#### [NEW] [pages/Register.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/pages/Register.tsx)
+#### [NEW] [pages/Register.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/pages/Register.tsx)
 회원가입 페이지
 
-#### [NEW] [pages/UserList.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/pages/UserList.tsx)
+#### [NEW] [pages/UserList.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/pages/UserList.tsx)
 회원 목록 페이지 (관리자)
 
-#### [NEW] [contexts/AuthContext.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/contexts/AuthContext.tsx)
+#### [NEW] [contexts/AuthContext.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/contexts/AuthContext.tsx)
 인증 상태 관리 (Context API)
 
-#### [NEW] [api/auth.ts](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/api/auth.ts)
+#### [NEW] [api/auth.ts](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/api/auth.ts)
 인증 API 클라이언트
 
-#### [MODIFY] [App.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/App.tsx)
+#### [MODIFY] [App.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/App.tsx)
 보호된 라우트, 로그인 상태에 따른 UI 분기
 
-#### [MODIFY] [Sidebar.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/front/components/Sidebar.tsx)
+#### [MODIFY] [Sidebar.tsx](file:///home/turbo/workspaces/workspace-edu/ocean-admin/frontend/components/Sidebar.tsx)
 로그인 사용자 정보 표시, 로그아웃 기능
 
 ---

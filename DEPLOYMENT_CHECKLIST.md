@@ -85,7 +85,7 @@ node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
    cd backend && npm run build
    
    # 프론트엔드
-   cd front && npm run build
+   cd frontend && npm run build
    ```
 
 3. **테스트**

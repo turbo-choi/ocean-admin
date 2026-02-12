@@ -7,8 +7,8 @@
 ## Tech Stack & Constraints
 - React 19 + TypeScript + Vite + React Router DOM 기반.
 - 스타일은 Tailwind 유틸리티 클래스 사용을 기본으로 한다.
-- API 통신은 `front/api`를 경유하고 페이지/컴포넌트에서 직접 fetch 남용을 피한다.
-- 인증 상태는 `front/contexts/AuthContext.tsx` 단일 소스로 유지한다.
+- API 통신은 `frontend/api`를 경유하고 페이지/컴포넌트에서 직접 fetch 남용을 피한다.
+- 인증 상태는 `frontend/contexts/AuthContext.tsx` 단일 소스로 유지한다.
 
 ## Implementation Patterns
 - 라우팅은 `App.tsx`의 공개/보호 라우트 구조를 유지한다.

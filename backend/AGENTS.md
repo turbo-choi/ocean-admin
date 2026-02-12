@@ -3,7 +3,7 @@
 ## Module Context
 - 이 영역은 Express API 서버와 SQLite 데이터 계층을 담당한다.
 - `src/index.ts`가 엔트리포인트이며 라우트/미들웨어/DB 초기화가 결합된다.
-- 프론트엔드(`../front`)는 `http://localhost:3001/api` 계약에 의존한다.
+- 프론트엔드(`../frontend`)는 `http://localhost:3001/api` 계약에 의존한다.
 
 ## Tech Stack & Constraints
 - Node.js + TypeScript + Express + better-sqlite3 기반.

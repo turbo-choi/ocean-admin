@@ -13,11 +13,11 @@
 
 ### Operational Commands
 - 의존성 설치(백엔드): `npm --prefix backend install`
-- 의존성 설치(프론트): `npm --prefix front install`
+- 의존성 설치(프론트): `npm --prefix frontend install`
 - 백엔드 개발 서버: `npm --prefix backend run dev`
-- 프론트 개발 서버: `npm --prefix front run dev`
+- 프론트 개발 서버: `npm --prefix frontend run dev`
 - 백엔드 빌드: `npm --prefix backend run build`
-- 프론트 빌드: `npm --prefix front run build`
+- 프론트 빌드: `npm --prefix frontend run build`
 - 백엔드 프로덕션 실행(빌드 후): `npm --prefix backend run start`
 - 서버 헬스체크: `curl http://localhost:3001/api/health`
 - 참고: 현재 `test` 스크립트가 없으므로 빌드 + 수동 API/화면 검증을 기본 검증 절차로 사용한다.
@@ -45,7 +45,7 @@
 
 ### Coding Convention
 - TypeScript 우선, 명시적 타입 사용을 기본으로 한다.
-- 파일 역할 분리: API 통신은 `front/api`, 전역 인증 상태는 `front/contexts`, 서버 엔드포인트는 `backend/src/routes`.
+- 파일 역할 분리: API 통신은 `frontend/api`, 전역 인증 상태는 `frontend/contexts`, 서버 엔드포인트는 `backend/src/routes`.
 - 네이밍: React 컴포넌트 PascalCase, 함수/변수 camelCase, API 경로 REST 관례 준수.
 - import는 ESM 기준(`.js` 확장 포함)으로 서버 코드와 일치시킨다.
 
@@ -62,8 +62,8 @@
 - **[Backend 전체 수정 및 서버 운영](./backend/AGENTS.md)** — Express 서버, DB 초기화, 런타임/배포 동작을 다룰 때.
 - **[Backend API 라우트 구현](./backend/src/routes/AGENTS.md)** — 인증/회원/게시판/댓글 엔드포인트 로직 수정 시.
 - **[Backend 인증 미들웨어](./backend/src/middleware/AGENTS.md)** — JWT 검증, 권한 체크, 토큰 생성 규칙 수정 시.
-- **[Frontend 전체 수정 및 앱 운영](./front/AGENTS.md)** — React 앱 구조, 빌드/실행, 라우팅 전반 수정 시.
-- **[Frontend API 클라이언트](./front/api/AGENTS.md)** — fetch/authFetch, 토큰 저장, API 계약 처리 수정 시.
-- **[Frontend 인증 상태 관리](./front/contexts/AGENTS.md)** — `AuthContext`와 로그인 상태 흐름 수정 시.
-- **[Frontend 페이지 로직](./front/pages/AGENTS.md)** — 페이지 단위 데이터 로딩, 라우트, 폼 처리 수정 시.
-- **[Frontend 공통 컴포넌트](./front/components/AGENTS.md)** — 재사용 UI 컴포넌트, 프레젠테이션 계층 수정 시.
+- **[Frontend 전체 수정 및 앱 운영](./frontend/AGENTS.md)** — React 앱 구조, 빌드/실행, 라우팅 전반 수정 시.
+- **[Frontend API 클라이언트](./frontend/api/AGENTS.md)** — fetch/authFetch, 토큰 저장, API 계약 처리 수정 시.
+- **[Frontend 인증 상태 관리](./frontend/contexts/AGENTS.md)** — `AuthContext`와 로그인 상태 흐름 수정 시.
+- **[Frontend 페이지 로직](./frontend/pages/AGENTS.md)** — 페이지 단위 데이터 로딩, 라우트, 폼 처리 수정 시.
+- **[Frontend 공통 컴포넌트](./frontend/components/AGENTS.md)** — 재사용 UI 컴포넌트, 프레젠테이션 계층 수정 시.
